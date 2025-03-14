@@ -1,0 +1,43 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[docker-compose.yml]
+indent_size = 4
+
+[{*.ctp,*.hphp,*.inc,*.module,*.php,*.php4,*.php5,*.phtml}]
+ij_php_align_assignments = true
+ij_php_align_class_constants = true
+ij_php_align_enum_cases = true
+ij_php_align_group_field_declarations = true
+ij_php_align_inline_comments = true
+ij_php_align_key_value_pairs = true
+ij_php_align_multiline_array_initializer_expression = true
+ij_php_align_phpdoc_comments = true
+ij_php_align_phpdoc_param_names = true
+ij_php_attributes_wrap = split_into_lines
+ij_php_comma_after_last_array_element = true
+ij_php_else_if_style = separate
+ij_php_force_short_declaration_array_style = true
+ij_php_group_use_wrap = off
+ij_php_if_brace_force = always
+ij_php_keep_control_statement_in_one_line = false
+ij_php_keep_first_column_comment = false
+ij_php_line_comment_add_space = true
+ij_php_line_comment_at_first_column = false
+ij_php_lower_case_boolean_const = true
+ij_php_lower_case_null_const = true
+ij_php_phpdoc_blank_line_before_tags = true
+ij_php_phpdoc_blank_lines_around_parameters = true

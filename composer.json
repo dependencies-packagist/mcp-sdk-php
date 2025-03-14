@@ -1,0 +1,35 @@
+{
+    "name": "mcp/mcp-sdk-php",
+    "description": "Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs.",
+    "keywords": [
+        "Model Context Protocol",
+        "MCP",
+        "MCP Server",
+        "MCP Client",
+        "MCP SDK PHP"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/dependencies-packagist/mcp-sdk-php",
+    "authors": [
+        {
+            "name": "jundayw",
+            "email": "jundayw@126.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MCP\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
