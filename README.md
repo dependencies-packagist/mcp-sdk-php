@@ -13,3 +13,7 @@ You can install the package via [Composer](https://getcomposer.org/):
 ```bash
 composer require mcp/mcp-sdk-php
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
