@@ -51,6 +51,6 @@ class ServerLoggingCapability implements McpModel {
     }
 
     public function jsonSerialize(): mixed {
-        return empty($this->extraFields) ? new \stdClass() : $this->extraFields; // No defined properties
+        return $this->extraFields; // No defined properties
     }
 }

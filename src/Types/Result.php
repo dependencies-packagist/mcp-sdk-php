@@ -47,30 +47,7 @@ class Result implements McpModel {
     }
 
     public function jsonSerialize(): mixed {
-        $data = [];
-        
-        // Only include _meta if it's not null
-        if ($this->_meta !== null) {
-            $data['_meta'] = $this->_meta;
-        }
-        
-        // Get object properties but exclude _meta (already handled) and extraFields (handled separately)
-        $vars = get_object_vars($this);
-        unset($vars['_meta'], $vars['extraFields']);
-        
-        // Add non-null properties
-        foreach ($vars as $key => $value) {
-            if ($value !== null) {
-                $data[$key] = $value;
-            }
-        }
-        
-        // Merge any extra fields
-        if (!empty($this->extraFields)) {
-            $data = array_merge($data, $this->extraFields);
-        }
-        
-        // Return empty object if data is empty
-        return !empty($data) ? $data : new \stdClass();
+        $data = get_object_vars($this);
+        return array_merge($data, $this->extraFields);
     }
 }

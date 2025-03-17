@@ -47,6 +47,6 @@ class ToolArguments implements McpModel {
     }
 
     public function jsonSerialize(): mixed {
-        return empty($this->extraFields) ? new \stdClass() : $this->extraFields;
+        return $this->extraFields;
     }
 }
