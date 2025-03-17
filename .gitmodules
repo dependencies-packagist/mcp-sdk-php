@@ -1,0 +1,3 @@
+[submodule "mcp-sdk-php"]
+	path = mcp-sdk-php
+	url = git@github.com:logiscape/mcp-sdk-php.git
