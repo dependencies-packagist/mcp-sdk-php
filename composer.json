@@ -18,11 +18,22 @@
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "psr/log": "^3.0",
+        "cboden/ratchet": "^0.4",
+        "monolog/monolog": "^3.0"
+    },
+    "suggest": {
+        "ext-pcntl": "For better process handling in CLI environments"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "squizlabs/php_codesniffer": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "MCP\\": "src/"
+            "Mcp\\": "src/"
         }
     },
     "extra": {
